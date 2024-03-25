@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Preferences Survey Form</title>
     <style>
       body {
-           font-family: sans-serif; 
-
-        }
+        font-family: sans-serif;
+      }
+      th, td {
+        padding: 2px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Food Preferences - Survey Form</h1>
     <h5>Please fill out and submit the survey form at the earliest</h5>
     <hr />
     <form action="/index.html" method="post">
-        <table>
-            <div>
-            <tr>
-                <tb>1. Name</tb>
-                <tb> <input type="text" name="user" /></tb>
-            </tr>
-            </div>
-            <tr>
-                <div>
-                <td>2. Age
-                </td>
-                <td>
-                    <input type="number" name="age" min="18" max="60" />
-                </td>
-                </div>
-            </tr>
-                <div>
-                <tr>
-                    <td>3. Where do you eat more often</td>
-                    <td><input type="radio" name="location" id="home" value="home" />
-                      <label for="home">At home</label>
-                      <td><input type="radio" name="location" id="work_or_school" value="work_or_school" />
-                        <label for="work_or_school">At work_or_school</label>
-                        <td><input type="radio" name="location" id="Hotel" value="Hotel" />
-                            <label for="Hotel">At Hotel</label>
-                    </td>
-                </tr>
-                </div>
-        </table>
+      <table>
+          <tr>
+            <td colspan="1">1. Name
+            </td>
+            <td colspan="5"> <input type="text" name="user" />
+            </td>
+          </tr>
+        <tr>
+            <td>2. Age
+            </td>
+            <td >
+              <input type="number" name="age" min="18" max="60" />
+            </td>
+        </tr>
+          <tr>
+            <td>3. Where do you eat more often</td>
+            <td>
+              <input type="radio" name="location" id="home" value="home" />
+              <label for="home">At home</label>
+            </td>
+
+            <td>
+              <input
+                type="radio"
+                name="location"
+                id="work or school"
+                value="work or school"
+              />
+              <label for="work or school">At work or school</label>
+            </td>
+
+            <td>
+              <input type="radio" name="location" id="Hotel" value="Hotel" />
+              <label for="Hotel">At Hotel</label>
+            </td>
+          </tr>
+        <tr>
+            <td colspan="2">4. Specify, how often?</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table>
+                    <thead>
+                    <tr>
+                       <th>Every day</th>
+                       <th>Few times a week</th>
+                       <th>Once a week</th>
+                       <th>Several times in a month</th>
+                       <th>Once in a month</th>
+                       <th>Less often than once a month</th>
+                       <th></th> 
+                    </tr>
+                    </thead>
+                </table>  
+            </td>
+        </tr>
+      </table>
     </form>
-</body>
+  </body>
 </html>
