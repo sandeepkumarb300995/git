@@ -15,13 +15,16 @@
       label {
         margin-right: 6px;
       }
+      button {
+        margin: 2px;
+      }
     </style>
   </head>
   <body>
     <h1>Food Preferences - Survey Form</h1>
     <h5>Please fill out and submit the survey form at the earliest</h5>
     <hr />
-    <form action="/index.html" method="post">
+    <form action="/" method="post">
       <table>
         <tr>
           <td>1. Name</td>
@@ -132,6 +135,12 @@
             <label for="Sure">Sure</label>
             <input type="radio" name="Vegan" id="No" value="No">
             <label for="No">No</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">SUBMIT</button>
+                <button type="reset">RESET</button>
             </td>
         </tr>
       </table>
