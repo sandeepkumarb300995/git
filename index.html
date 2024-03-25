@@ -13,7 +13,7 @@
         padding: 16px;
       }
       label {
-        margin-right: 20px;
+        margin-right: 16px;
       }
     </style>
   </head>
@@ -24,48 +24,47 @@
     <form action="/index.html" method="post">
       <table>
         <tr>
-          <td>1. Name</td>
+          <td colspan="1">1. Name</td>
           <td><input type="text" name="user" /></td>
         </tr>
         <tr>
-          <td>2. Age</td>
+          <td colspan="1">2. Age</td>
           <td>
             <input type="number" name="age" min="18" max="60" />
           </td>
         </tr>
         <tr>
-          <td>3. Where do you eat more often</td>
+          <td colspan="1">3. Where do you eat more often</td>
           <td>
             <input type="radio" name="location" id="home" value="home" />
             <label for="home">At home</label>
-            <input
-              type="radio"
-              name="location"
-              id="work or school"
-              value="work or school"
-            />
+            <input type="radio" name="location" id="work or school" value="work or school"/>
             <label for="work or school">At work or school</label>
             <input type="radio" name="location" id="Hotel" value="Hotel" />
             <label for="Hotel">At Hotel</label>
           </td>
         </tr>
         <tr>
-          <td colspan="2">4. Specify, how often?</td>
+          <td>4. Specify, how often?</td>
         </tr>
-        <tr>
           <td colspan="2">
             <table>
               <thead>
                 <tr>
+                  <th colspan="2"></th>
                   <th>Every day</th>
                   <th>Few times a week</th>
                   <th>Once a week</th>
                   <th>Several times in a month</th>
                   <th>Once in a month</th>
                   <th>Less often than once a month</th>
-                  <th></th>
-                </tr>
               </thead>
+              <tbody>
+                <tr>
+                    <td colspan="2">You Prepare your own meals</td>
+                    <td><input type="radio" name="You Prepare" value="Every"></td>
+                </tr>
+              </tbody>
             </table>
           </td>
         </tr>
